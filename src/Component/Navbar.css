@@ -1,0 +1,171 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    
+   /* background-color: rgb(126, 202, 202);*/
+    width: 100%;
+    position: fixed;
+   
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+
+}
+:root{
+    --background:#ffffff;
+    --text-primary:#000;
+    --text-secondary:chartreuse;
+
+}
+[data-theme='dark']{
+    --background:#ffffff;
+    --text-primary:#000;
+    --text-secondary:chartreuse;
+
+}
+
+
+
+.navbar-menu{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    z-index: 100;
+    list-style: none;
+   
+    margin-top: 220px;
+    
+}
+.logo{
+    margin-left: 90px;
+}
+.photo{
+  width: 40%;
+  padding: 10px;
+  margin-left: 30px;
+}
+.logo h1{
+    font-size: 1.3rem;
+  
+    margin-left: 25px;
+    white-space: nowrap;
+}
+.logo p{
+    margin-left: 30px;
+}
+.nav-links{
+    text-decoration: none;
+    color: #292424;
+    font-size: 1rem;
+    padding:0.7rem 1rem;
+    white-space: nowrap;
+
+}
+.nav-links-show{
+    text-decoration: none;
+    color: #fff;
+    background:rgb(13, 6, 37) ;
+    font-size: 1rem;
+    padding:0.7rem 1rem;
+    white-space: nowrap;
+}
+.nav-links{
+    
+    padding-right: 30px;
+    top: 100px;
+}
+
+.nav-links:hover{
+    color:  rgb(55, 159, 245);
+}
+
+.menu-icon{
+    display: none;
+}
+.light__mode{
+    margin-left: -200px;
+    white-space: nowrap;
+    padding: 0 30px ;
+    padding-top: 10px;
+    
+}
+.light__mode span{
+  margin-left: 15px;
+  font-size: 1rem;
+ 
+}
+.light__mode i{
+   font-size: 1.5rem;
+
+   color: #333;
+}
+@media screen and (max-width:850px)
+{
+    .menu-icon{
+        display: block;
+        color: #333;
+        font-size: 1.7rem;
+    }
+     
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        background: rgb(55, 159, 249);
+        width:50%;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left:0;
+        opacity:1;
+        align-items: stretch;
+        padding: 80px 0px 10px 0px;
+        margin-left: 150px;
+        color: #333;
+        
+     
+      
+    }
+    .navbar-menu.active{
+        left: -100%;
+      
+        
+    }
+   
+    
+    .nav-links{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        width: 300px;
+       
+    }
+    .nav-links-show{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        width: 300px;
+        
+       
+    }
+    .nav-links:hover{
+        background-color: #fff;
+        width: 100%;
+        color: #000;
+    }
+    
+    
+    
+}
+
+
+
+
+
